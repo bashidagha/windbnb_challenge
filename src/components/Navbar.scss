@@ -1,0 +1,37 @@
+nav {
+  margin-top: 3.2rem;
+  min-height: 5.5rem;
+
+  .d-flex{
+      width: 29.7rem;
+      height: 5.5rem;
+      border-radius: 0.7rem;
+      border: 1rem solid white;
+  }
+
+  img{
+      width: 9.6rem;
+      height: 1.875rem;
+  }
+
+  p {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    
+  }
+
+  .loc {
+    color: #333333;
+  }
+  .guest {
+    color: #bdbdbd;
+  }
+
+  svg {
+    width: 1.7rem;
+    height: 1.7rem;
+    color: #eb5757 !important;
+  }
+}

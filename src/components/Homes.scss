@@ -1,0 +1,33 @@
+.stay_items{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+    p {
+        svg{
+            width: 1.576rem;
+            height: 1.576rem; 
+        }
+        width: 6rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+        height: 1.576rem;
+    }
+
+    img{
+        width: 39.5rem;
+        height:26.9rem;
+        margin-bottom: 2rem;
+        border-radius: 2.4rem;
+    }
+    h3{
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin-top: 1.8rem;
+    }
+    div{
+        width: 39.5rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}
