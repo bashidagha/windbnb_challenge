@@ -9,7 +9,7 @@ const Homes = ({ homes }) => {
   return (
     <div className="d-flex flex-wrap justify-content-between">
       {homes ? (
-        homes.filter((home)=> home.city !== filteredCities).map((home) => (
+        homes.filter(filteredCities!==""?(home)=> home.city === filteredCities:(home)=> home).map((home) => (
           <div className="stay_items" key={home.title}>
             <img src={home.photo} alt="Home Photo"></img>
             <div className="d-flex">
