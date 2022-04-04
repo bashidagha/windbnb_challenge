@@ -1,9 +1,12 @@
 import "./Navbarexpand.scss";
-import {useState} from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { changeCity } from '../redux/citySlice'
+
 
 const NavbarExpand = () => {
 
-    const [city,setCity] = useState("Helsinki");
+  const city = useSelector((state) => state.city.value)
+  const dispatch = useDispatch()
 
   return (
     <div className="nabar_expand w-100">
@@ -14,11 +17,10 @@ const NavbarExpand = () => {
             <h4>{city}, Finland</h4>
           </div>
 
-            <p onClick={()=>setCity("Helsinki")}>Helsinki, Finland</p>
-            <p onClick={()=>setCity("Turku")}>Turku, Finland</p>
-            <p onClick={()=>setCity("Oulu")}>Oulu, Finland</p>
-            <p onClick={()=>setCity("Vaasa")}>Vaasa, Finland</p>
-
+            <p onClick={() => dispatch(changeCity("Helsinki"))}>Helsinki, Finland</p>
+            <p onClick={() => dispatch(changeCity("Turku"))}>Turku, Finland</p>
+            <p onClick={() => dispatch(changeCity("Oulu"))}>Oulu, Finland</p>
+            <p onClick={() => dispatch(changeCity("Vaasa"))}>Vaasa, Finland</p>
         </div>
 
         <div>
