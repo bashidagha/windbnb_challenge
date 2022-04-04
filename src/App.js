@@ -16,10 +16,6 @@ function App() {
 
   return (
     <div>
-
-      
-
-
       <Navbar />
       <main className="container">
         <div className="title d-flex justify-content-between w-100 align-items-center">
@@ -29,8 +25,10 @@ function App() {
       </main>
       <p className="w100 footer_text text-center">
         created by&nbsp;
-        <a href="https://github.com/bashidagha" style={{ fontWeight: "700" }}>bashidagha</a> -{" "}
-        <a href="https://devchallenges.io/">devChallenges.io</a>
+        <a href="https://github.com/bashidagha" style={{ fontWeight: "700" }}>
+          bashidagha
+        </a>{" "}
+        - <a href="https://devchallenges.io/">devChallenges.io</a>
       </p>
     </div>
   );
