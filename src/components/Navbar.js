@@ -1,20 +1,24 @@
 import logo from "../assets/logo.svg";
 import "./Navbar.scss";
 import NavbarExpand from "./NavbarExpand";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+
+  const filteredCities = useSelector((state) => state.city.value.filterValue);
+
   return (
     <>
-      <div class="offcanvas offcanvas-top" id="demo">
-        <div class="offcanvas-header">
-          <h1 class="offcanvas-title"></h1>
+      <div className="offcanvas offcanvas-top" id="demo">
+        <div className="offcanvas-header">
+          <h1 className="offcanvas-title"></h1>
           <button
             type="button"
-            class="btn-close"
+            className="btn-close"
             data-bs-dismiss="offcanvas"
           ></button>
         </div>
-        <div class="offcanvas-body">
+        <div className="offcanvas-body">
           <NavbarExpand/>
         </div>
       </div>
@@ -28,7 +32,7 @@ const Navbar = () => {
             data-bs-toggle="offcanvas"
             data-bs-target="#demo"
           >
-            <p className="m-0 loc">Helsinki, Finland</p>
+            <p className="m-0 loc">{filteredCities===""?"Helsinki":filteredCities}, Finland</p>
             <p className="m-0 guest">Add guests</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
